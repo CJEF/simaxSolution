@@ -111,6 +111,7 @@
         &__number {
             display: flex;
             justify-content: center;
+            -webkit-justify-content: center;
         }
         &__wrap {
             display: flex;
