@@ -1,0 +1,11 @@
+@import "./vars.scss";
+@import "./vendors/normalize.scss";
+@import "./fonts.scss";
+@import "./global.scss";
+
+@import "blocks/intro.scss";
+@import "blocks/about.scss";
+@import "blocks/goals.scss";
+@import "blocks/problems.scss";
+@import "blocks/decisions.scss";
+@import "blocks/result.scss";

@@ -1,0 +1,134 @@
+.decisions {
+    &__inner {
+        padding: 85px 0 155px;
+    }
+    &__subtitle {
+        margin-top: 75px;
+    }
+    &-stage {
+        &__title {
+            margin-bottom: 7px;
+        }
+        &__item:first-child {
+            margin-top: 80px;
+        }
+        &__item {
+            margin-top: 120px;
+        }
+        &__item:nth-child(2) {
+            margin-top: 0;
+        }
+        &__item:first-child .decisions-stage__icon:after {
+            content: '';
+            position: absolute;
+            background-image: url('../images/src/dashed-1.png');
+            bottom: -719px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 697px;
+            width: 2px;
+            background-repeat: no-repeat;
+        }
+        &__item:nth-child(2) .decisions-stage__icon:before {
+            content: '';
+            position: absolute;
+            background-image: url('../images/src/dashed-2.png');
+            top: -69px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 45px;
+            width: 8px;
+            background-repeat: no-repeat;
+        }
+        &__item:nth-child(2) .decisions-stage__icon:after {
+            content: '';
+            position: absolute;
+            background-image: url('../images/src/dashed-3.png');
+            bottom: -106px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 82px;
+            width: 8px;
+            background-repeat: no-repeat;
+        }
+        &__item:nth-child(3) .decisions-stage__icon:after {
+            content: '';
+            position: absolute;
+            background-image: url('../images/src/dashed-4.png');
+            bottom: -725px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 690px;
+            width: 8px;
+            background-repeat: no-repeat;
+        }
+        &__item:nth-child(3) {
+            margin-top: 130px;
+        }
+        &__item:nth-child(3) .decisions-stage__img,
+        &__item:nth-child(4) .decisions-stage__img {
+            margin-left: -75px;
+            max-width: 1215px;
+        }
+        &__item:nth-child(4) {
+            margin-top: 70px;
+        }
+        &__icon {
+            position: relative;
+            top: 0;
+            width: 100px;
+            height: 100px;
+            min-width: 100px;
+            background-color: $green;
+            display: flex;
+            justify-content: center;
+            border-radius: 100%;
+            margin-right: 35px;
+            margin-top: -23px;
+            img {
+                width: 42px;
+                min-width: 42px;
+                height: 42px;
+                border-radius: 0;
+                position: absolute;
+                top: 61px;
+                left: 28px;
+            }
+        }
+        &__icon:first-child::after {
+
+        }
+        &__number::before {
+            counter-increment: stages;
+            content: "0"counter(stages);
+            color: #fff;
+            font-size: 18px;
+            font-weight: 500;
+            position: absolute;
+            top: 15px;
+            text-align: center;
+        }
+        &__number {
+            display: flex;
+            justify-content: center;
+        }
+        &__wrap {
+            display: flex;
+            position: relative;
+            margin-left: -125px;
+        }
+        &__title {
+            font-size: 38px;
+            font-weight: 500;
+            span {
+                color: $green;
+                font-weight: 900;
+            }
+        }
+        &__img {
+            margin-left: -175px;
+            max-width: initial;
+            width: 140%;
+        }
+    }
+}

@@ -1,0 +1,90 @@
+.result {
+    background-color: $green;
+    position: relative;
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 55%;
+    }
+    &:before {
+        background-image: url('../images/src/dots.png');
+        top: 0;
+        background-repeat: repeat-x;
+    }
+    &:after {
+        background-image: url('../images/src/dots-bottom.png');
+        bottom: 0;
+        background-repeat: repeat-x;
+        height: 42.5%;
+    }
+    &__inner {
+        padding: 120px 0 110px;
+        z-index: 2;
+        position: relative;
+    }
+    &__title {
+        position: relative;
+        text-align: center;
+        color: #fff !important;
+        padding-bottom: 75px;
+        margin-bottom: 25px;
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 44px;
+            height: 4px;
+            background-color: #000;
+        }
+    }
+    &__subtitle {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 620px;
+    }
+    &-block {
+        overflow: hidden;
+        background-color: #fff;
+        z-index: 3;
+        max-width: 1460px;
+        margin: 40px auto 0;
+        border-radius: 10px;
+        &__img {
+            position: absolute;
+            &:first-child {
+                left: -350px;
+                bottom: -65px;
+                transform: rotate(45deg);
+            }
+            &:nth-child(2) {
+                right: -140px;
+                bottom: -175px;
+            }
+        }
+        &__inner {
+            position: relative;
+            padding: 55px 75px 50px;
+            display: flex;
+        }
+        &__item {
+            text-align: center;
+        }
+
+    }
+    &-item {
+        &__inner {
+            padding: 0 65px;
+        }
+        &__icon {
+            margin-bottom: 35px;
+        }
+        &__text {
+            min-width: 200px;
+        }
+    }
+}
