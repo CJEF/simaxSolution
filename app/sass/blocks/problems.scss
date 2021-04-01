@@ -1,7 +1,7 @@
 .problems {
     border-bottom: 2px solid $green;
     &-and-decisions {
-        background-image: url('../images/src/trumpet-bg.png');
+        background-image: url('../images/src/pipe.svg');
         background-size: contain;
     }
     &__inner {
@@ -38,7 +38,8 @@
         }
         &:before {
             content: '';
-            background-image: url('../images/src/problem-icon.png');
+            background-image: url('../images/src/problem-icon.svg');
+            width: 24px;
             background-repeat: no-repeat;
             background-position: center;
             position: absolute;

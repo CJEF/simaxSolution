@@ -73,18 +73,23 @@
         }
         &__item {
             text-align: center;
+            &:first-of-type .result-item__icon {
+                width: 66px;
+            }
         }
-
     }
     &-item {
+
         &__inner {
             padding: 0 65px;
         }
         &__icon {
-            margin-bottom: 35px;
+            margin: 0 auto 35px;
+            width: 77px;
         }
         &__text {
             min-width: 200px;
         }
     }
+
 }
